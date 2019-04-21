@@ -1,5 +1,5 @@
 # Minimalist Runner
-Preview: https://mr-runner.xen.cx/
+Preview: https://mr-game.xen.cx/
 
 Made this a couple months back while experimenting with Phaser. Code is extremely messy because I couldn't get Phaser to be responsive so I ended up changing game dimensions with if/else statements based on screen resolution.
 
