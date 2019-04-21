@@ -1,0 +1,56 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>Minimalist Runner</title>
+    <!-- Library -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.js"></script>
+    <!-- Utilities -->
+    <!--<script src="src/utilities/pauseAndroidAudio.js"></script>-->
+    <!-- Scenes -->
+    <script src="src/scenes/loader.js"></script>
+    <script src="src/scenes/gameMenu.js"></script>
+    <script src="src/scenes/playGame.js"></script>
+    <script src="src/scenes/gameOver.js"></script>
+    <!-- Configuration -->
+    <script src="src/config.js"></script>
+    
+    <style type="text/css">
+        @font-face {
+            font-family: Mini7;
+            src: url('assets/fonts/mini7.ttf');
+        }
+        body {
+            margin: 0;
+            background-color:black;
+            overflow:hidden;
+            font-family: Mini7;
+        }
+        canvas {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            font-family: Mini7;
+            width:100%;
+            height:100%;
+        }
+        .fontLoader {
+            position: absolute;
+            left: -1000px;
+            visibility: hidden;
+        }
+        #phaser-app {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="fontLoader" style="font-family: Mini7;">-</div>
+    <div id="phaser-app"></div>
+</body>
+</html>
